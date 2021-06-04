@@ -53,7 +53,7 @@ h1 {
   margin: auto;
 }
 
-.headline p {
+.headline > p {
   margin: 20px 0 30px 0;
   padding: 0 .5rem;
   line-height: 1.5;
@@ -64,6 +64,44 @@ h1 {
   background-color: var(--light-grayish-magenta);
   padding: 1.5rem;
   margin-top: 2rem;
-  display: flex;
-  flex-direction: column;
+  border-radius: 6px;
+}
+
+.reviews p {
+  color: var(--dark-magenta);
+  font-weight: 700;
+  font-size: 1.3rem;
+}
+
+/* Star Rating classes to add with JS accordingly */
+
+.rating {
+  display: block;
+  margin: 0 auto;
+  height: 15px;
+}
+
+.five-stars {
+  width: 130px;
+  background-image: url(../images/icon-star2.svg);
+}
+
+.four-stars {
+  width: 104px;
+  background-image: url(../images/icon-star2.svg);
+}
+
+.three-stars {
+  width: 78px;
+  background-image: url(../images/icon-star2.svg);
+}
+
+.two-stars {
+  width: 52px;
+  background-image: url(../images/icon-star2.svg);
+}
+
+.one-star {
+  width: 26px;
+  background-image: url(../images/icon-star2.svg);
 }
