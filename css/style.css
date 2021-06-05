@@ -30,7 +30,7 @@ body {
 
 main {
   width: 500px;
-  max-width: 85%;
+  max-width: 87%;
   margin: 80px auto;
 }
 
@@ -48,22 +48,21 @@ h1 {
   color: var(--dark-magenta);
   font-size: 3.1rem;
   font-weight: 700;
-  width: 75%;
+  width: 80%;
   line-height: 1.1;
   margin: auto;
 }
 
 .headline > p {
   margin: 20px 0 30px 0;
-  padding: 0 .5rem;
-  line-height: 1.5;
+  line-height: 1.6;
   color: var(--dark-grayish-magenta);
 }
 
 .reviews li {
   background-color: var(--light-grayish-magenta);
-  padding: 1.5rem;
-  margin-top: 2rem;
+  padding: 1.6rem;
+  margin-top: 1.6rem;
   border-radius: 6px;
 }
 
@@ -71,15 +70,16 @@ h1 {
   color: var(--dark-magenta);
   font-weight: 700;
   font-size: 1.3rem;
+  margin-top: 1.5rem;
 }
-
-/* Star Rating classes to add with JS accordingly */
 
 .rating {
   display: block;
   margin: 0 auto;
   height: 15px;
 }
+
+/* Star Rating classes to add with JS accordingly */
 
 .five-stars {
   width: 130px;
@@ -105,3 +105,48 @@ h1 {
   width: 26px;
   background-image: url(../images/icon-star2.svg);
 }
+
+.testimonials li {
+  background-color: var(--dark-magenta);
+  border-radius: 6px;
+  margin-bottom: 1.6rem;
+  padding: 4rem 3.2rem;
+}
+
+.testimonials li .buyer-info {
+  display: flex;
+  align-items: center;
+}
+
+.testimonials li img {
+  width: 4rem;
+  border-radius: 50px;
+  margin-right: 2rem;
+}
+
+.testimonials li h3 {
+  color: var(--white);
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin-bottom: .4rem;
+}
+
+.testimonials li span {
+  font-size: 1.3rem;
+  color: var(--soft-pink);
+}
+
+.testimonials li p {
+  margin-top: 3.5rem;
+  color: var(--white);
+  font-size: 1.3rem;
+  line-height: 1.7;
+}
+
+
+
+
+
+
+
+
