@@ -26,10 +26,11 @@ body {
   font-weight: 500;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background: url(../images/bg-pattern-top-mobile.svg) no-repeat top left,
+              url(../images/bg-pattern-bottom-mobile.svg) no-repeat bottom left;
 }
 
 main {
-  width: 500px;
   max-width: 87%;
   margin: 80px auto;
 }
@@ -44,16 +45,18 @@ header {
   text-align: center;
 }
 
+.main-info {
+  text-align: center;
+}
+
 h1 {
   color: var(--dark-magenta);
   font-size: 3.1rem;
   font-weight: 700;
-  width: 80%;
   line-height: 1.1;
-  margin: auto;
 }
 
-.headline > p {
+.headline .main-info > p {
   margin: 20px 0 30px 0;
   line-height: 1.6;
   color: var(--dark-grayish-magenta);
@@ -106,11 +109,15 @@ h1 {
   background-image: url(../images/icon-star2.svg);
 }
 
+.testimonials {
+  margin-top: 5rem;
+}
+
 .testimonials li {
   background-color: var(--dark-magenta);
   border-radius: 6px;
   margin-bottom: 1.6rem;
-  padding: 4rem 3.2rem;
+  padding: 4rem 2rem 3.1rem 3.2rem;
 }
 
 .testimonials li .buyer-info {
@@ -136,13 +143,28 @@ h1 {
   color: var(--soft-pink);
 }
 
-.testimonials li p {
-  margin-top: 3.5rem;
+.testimonials li blockquote {
+  margin-top: 3.1rem;
   color: var(--white);
   font-size: 1.3rem;
   line-height: 1.7;
 }
 
+@media only screen and (min-width: 800px) {
+
+  main {
+    width: 80%;
+  }
+
+  .headline {
+    display: flex; 
+  }
+
+  .main-info {
+    text-align: left;
+  }
+
+}
 
 
 
