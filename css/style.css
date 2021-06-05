@@ -157,12 +157,28 @@ h1 {
   }
 
   .headline {
-    display: flex; 
+    display: flex;
+    flex-direction: column;
   }
 
   .main-info {
-    text-align: left;
+    width: 80%;
   }
+
+  .reviews ul {
+    display: flex;
+    gap: 12px;
+  }
+
+  .reviews ul li {
+    flex-basis: 0;
+    flex-grow: 1;
+    
+  }
+
+  /* .main-info {
+    text-align: left;
+  } */
 
 }
 
