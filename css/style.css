@@ -21,6 +21,7 @@ html {
 }
 
 body {
+  height: 100vh;
   font-size: 1.5rem;
   font-family: 'Spartan';
   font-weight: 500;
@@ -150,10 +151,16 @@ h1 {
   line-height: 1.7;
 }
 
-@media only screen and (min-width: 800px) {
+@media only screen and (min-width: 700px) {
+
+  body {
+    background: url(../images/bg-pattern-top-desktop.svg) no-repeat top left,
+              url(../images/bg-pattern-bottom-desktop.svg) no-repeat bottom right;
+  }
 
   main {
     width: 80%;
+    max-width: 1110px;
   }
 
   .headline {
@@ -163,11 +170,13 @@ h1 {
 
   .main-info {
     width: 80%;
+    text-align: center;
+    margin: auto;
   }
 
   .reviews ul {
     display: flex;
-    gap: 12px;
+    gap: 1.2rem;
   }
 
   .reviews ul li {
@@ -176,9 +185,55 @@ h1 {
     
   }
 
-  /* .main-info {
+  .testimonials {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media only screen and (min-width: 900px) {
+
+  .testimonials {
+    width: 100%;
+  }
+
+  .testimonials ul {
+    display: flex;
+    gap: 1.2rem;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+
+  body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  }
+
+  .headline {
+    flex-direction: row;
+  }
+
+  .main-info {
     text-align: left;
-  } */
+  }
+
+  .reviews ul {
+    flex-direction: column;
+  }
+
+  .reviews ul li  {
+    display: flex;
+    width: 445px;
+    align-items: center;
+  }
+
+  .reviews li p, .reviews li span {
+    margin: 0;
+  }
 
 }
 
