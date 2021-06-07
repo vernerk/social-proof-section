@@ -143,6 +143,24 @@ h1 {
   line-height: 1.7;
 }
 
+<<<<<<< HEAD
+=======
+@media only screen and (min-width: 800px) {
+
+  main {
+    width: 80%;
+  }
+
+  .headline {
+    display: flex; 
+  }
+
+  .main-info {
+    text-align: left;
+  }
+
+}
+>>>>>>> parent of 81a8bc5 (.)
 
 
 
